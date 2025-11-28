@@ -6,7 +6,7 @@ import dts from "vite-plugin-dts"
 import tsConfigPaths from "vite-tsconfig-paths"
 import * as packageJson from "./package.json"
 
-export default defineConfig((configEnv) => ({
+export default defineConfig({
   plugins: [
     dts({
       include: ["./src/tauri-controls"],
@@ -14,10 +14,6 @@ export default defineConfig((configEnv) => ({
     }),
     react(),
     tsConfigPaths(),
-    // linterPlugin({
-    //   include: ["./src/tauri-controls/**/*.{ts,tsx}"],
-    //   linters: [new EsLinter({ configEnv })],
-    // }),
   ],
   build: {
     lib: {
@@ -38,10 +34,10 @@ export default defineConfig((configEnv) => ({
           "tailwind-merge": "tailwindMerge",
           "@tauri-apps/plugin-window": "pluginWindow",
         },
-        intro: 'import "./style.css";',
-        plugins: [terser()],
+        intro: 'import "./tauri-controls-react.css";',
       },
     },
+    cssCodeSplit: false,
   },
 
   clearScreen: false,
@@ -50,4 +46,4 @@ export default defineConfig((configEnv) => ({
     strictPort: true,
   },
   envPrefix: ["VITE_", "TAURI_"],
-}))
+})

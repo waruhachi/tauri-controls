@@ -6,7 +6,7 @@ import solidPlugin from "vite-plugin-solid"
 import * as packageJson from "./package.json"
 
 // https://vitejs.dev/config/
-export default defineConfig((_) => ({
+export default defineConfig({
   plugins: [
     dts({
       include: ["./src/tauri-controls"],
@@ -34,10 +34,10 @@ export default defineConfig((_) => ({
           "tailwind-merge": "tailwindMerge",
           "@tauri-apps/plugin-window": "pluginWindow",
         },
-        intro: 'import "./style.css";',
-        plugins: [terser()],
+        intro: 'import "./tauri-controls-solid.css";',
       },
     },
+    cssCodeSplit: false,
   },
 
   // Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`
@@ -52,4 +52,4 @@ export default defineConfig((_) => ({
   // 3. to make use of `TAURI_DEBUG` and other env variables
   // https://tauri.studio/v1/api/config#buildconfig.beforedevcommand
   envPrefix: ["VITE_", "TAURI_"],
-}))
+})

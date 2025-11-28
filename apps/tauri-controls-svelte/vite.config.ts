@@ -1,7 +1,5 @@
-// import resolve from "@rollup/plugin-node-resolve"
 import terser from "@rollup/plugin-terser"
 import { sveltekit } from "@sveltejs/kit/vite"
-// import svelte from "rollup-plugin-svelte"
 import { defineConfig } from "vitest/config"
 
 export default defineConfig({
@@ -11,11 +9,7 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      plugins: [
-        // svelte({}),
-        // resolve({ browser: true }),
-        terser()
-      ]
+      plugins: [terser()]
     }
   },
 
