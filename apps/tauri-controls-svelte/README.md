@@ -3,9 +3,10 @@
   <img alt="Tauri Controls" src="https://github.com/agmmnn/tauri-controls/assets/16024979/12f46aa7-72de-4c44-aa4a-0580c73fc73a">
 </picture>
 
-![](https://img.shields.io/bundlephobia/min/@waruhachi/tauri-controls-svelte)
-![](https://img.shields.io/bundlephobia/minzip/@waruhachi/tauri-controls-svelte)
-![](https://img.shields.io/npm/dt/@waruhachi/tauri-controls-svelte)
+![npm bundle size](https://img.shields.io/bundlephobia/min/%40waruhachi%2Ftauri-controls-svelte)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/%40waruhachi%2Ftauri-controls-svelte)
+![NPM Downloads](https://img.shields.io/npm/dw/%40waruhachi%2Ftauri-controls-svelte)
+![Svelte](https://img.shields.io/badge/Svelte-ffffff?logo=svelte&logoColor=fe3e00)
 
 ## @waruhachi/tauri-controls-svelte
 
