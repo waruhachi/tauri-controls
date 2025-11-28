@@ -5,12 +5,12 @@
 
 ![](https://img.shields.io/bundlephobia/min/%40tauri-controls%2Fvue)
 ![](https://img.shields.io/bundlephobia/minzip/%40tauri-controls%2Fvue)
-[![](https://img.shields.io/npm/dt/%40tauri-controls%2Fvue)](https://npmjs.com/package/tauri-controls) [![Vue.js](https://img.shields.io/badge/Vue.js-%2335495e.svg?logo=vuedotjs&logoColor=%234FC08D)](https://www.npmjs.com/package/@tauri-controls/vue)
+[![](https://img.shields.io/npm/dt/%40tauri-controls%2Fvue)](https://npmjs.com/package/tauri-controls) [![Vue.js](https://img.shields.io/badge/Vue.js-%2335495e.svg?logo=vuedotjs&logoColor=%234FC08D)](https://www.npmjs.com/package/@waruhachi/tauri-controls-vue)
 
-## @tauri-controls/vue
+## @waruhachi/tauri-controls-vue
 
 ```bash
-pnpm add @tauri-controls/vue
+pnpm add @waruhachi/tauri-controls-vue
 ```
 
-https://github.com/agmmnn/tauri-controls
+https://github.com/waruhachi/tauri-controls

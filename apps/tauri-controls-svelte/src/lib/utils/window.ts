@@ -1,11 +1,11 @@
 import type { Window } from "@tauri-apps/api/window"
-import { writable, type Writable, get } from "svelte/store"
+import { get, writable, type Writable } from "svelte/store"
 
-export let appWindow: Writable<Window | undefined> = writable(undefined);
+export let appWindow: Writable<Window | undefined> = writable(undefined)
 
 export const initializeAppWindow = async () => {
-  import("@tauri-apps/api").then((mod) => {
-    appWindow.set(mod.window.getCurrent());
+  import("@tauri-apps/api/window").then((mod) => {
+    appWindow.set(mod.getCurrentWindow())
   })
 }
 

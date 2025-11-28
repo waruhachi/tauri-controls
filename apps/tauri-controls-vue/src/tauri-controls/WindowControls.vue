@@ -11,26 +11,27 @@ defineOptions({
   inheritAttrs: false,
 })
 
-const props = withDefaults(defineProps<WindowControlsProps>(), {
-  justify: false,
-  hide: false,
-  hideMethod: "display",
-  className: "",
-})
+const {
+  platform,
+  justify = false,
+  hide = false,
+  hideMethod = "display",
+  className = "",
+} = defineProps<WindowControlsProps>()
 
-let platform = props.platform
+let platformToUse = platform
 onMounted(() => {
   getOsType().then((type) => {
-    if (!platform) {
+    if (!platformToUse) {
       switch (type) {
         case "macos":
-          platform = "macos"
+          platformToUse = "macos"
           break
         case "linux":
-          platform = "gnome"
+          platformToUse = "gnome"
           break
         default:
-          platform = "windows"
+          platformToUse = "windows"
       }
     }
   })
@@ -38,23 +39,23 @@ onMounted(() => {
 
 const customClass = twMerge(
   "flex",
-  props.className,
-  props.hide && (props.hideMethod === "display" ? "hidden" : "invisible")
+  className,
+  hide && (hideMethod === "display" ? "hidden" : "invisible")
 )
 </script>
 
 <template>
   <Windows
     v-if="platform === 'windows'"
-    :class="twMerge(customClass, props.justify && 'ml-auto')"
+    :class="twMerge(customClass, justify && 'ml-auto')"
   />
   <MacOs
     v-else-if="platform === 'macos'"
-    :class="twMerge(customClass, props.justify && 'ml-0')"
+    :class="twMerge(customClass, justify && 'ml-0')"
   />
   <Gnome
     v-else-if="platform === 'gnome'"
-    :class="twMerge(customClass, props.justify && 'ml-auto')"
+    :class="twMerge(customClass, justify && 'ml-auto')"
   />
-  <Windows v-else :class="twMerge(customClass, props.justify && 'ml-auto')" />
+  <Windows v-else :class="twMerge(customClass, justify && 'ml-auto')" />
 </template>

@@ -55,7 +55,7 @@ export function MacOS({ className, ...props }: HTMLProps<HTMLDivElement>) {
       </Button>
       <Button
         onClick={minimizeWindow}
-        className="aspect-square h-3 w-3 cursor-default content-center items-center justify-center self-center rounded-full border border-black/[.12]  bg-[#ffbd2e] text-center text-black/60 hover:bg-[#ffbd2e] active:bg-[#bf9122] active:text-black/60 dark:border-none"
+        className="aspect-square h-3 w-3 cursor-default content-center items-center justify-center self-center rounded-full border border-black/[.12] bg-[#ffbd2e] text-center text-black/60 hover:bg-[#ffbd2e] active:bg-[#bf9122] active:text-black/60 dark:border-none"
       >
         {isHovering && <Icons.minMac />}
       </Button>

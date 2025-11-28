@@ -14,7 +14,7 @@ import {
   <div
     :class="
       twMerge(
-        'mr-[10px] h-auto items-center space-x-[13px]',
+        'mr-2.5 h-auto items-center space-x-[13px]',
         $attrs.class as string
       )
     "

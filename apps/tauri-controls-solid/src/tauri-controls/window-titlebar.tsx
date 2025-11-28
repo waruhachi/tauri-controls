@@ -53,7 +53,7 @@ export function WindowTitlebar(props: WindowTitlebarProps) {
   return (
     <div
       class={twMerge(
-        "bg-background flex select-none flex-row overflow-hidden",
+        "bg-background flex flex-row overflow-hidden select-none",
         local.class
       )}
       data-tauri-drag-region

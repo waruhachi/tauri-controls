@@ -4,8 +4,8 @@ import { ref } from "vue"
 export const appWindow = ref<window.Window | null>(null)
 export const isWindowMaximized = ref(false)
 
-import("@tauri-apps/api").then((module) => {
-  appWindow.value = module.window.getCurrent()
+import("@tauri-apps/api/window").then((module) => {
+  appWindow.value = module.getCurrentWindow()
   appWindow.value.onResized(async () => {
     const isMaximized = await appWindow.value?.isMaximized()
     if (isMaximized !== undefined) {

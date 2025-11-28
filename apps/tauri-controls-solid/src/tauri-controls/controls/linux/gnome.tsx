@@ -14,10 +14,7 @@ export function Gnome(props: ComponentProps<"div">) {
 
   return (
     <div
-      class={twMerge(
-        "mr-[10px] h-auto items-center space-x-[13px]",
-        local.class
-      )}
+      class={twMerge("mr-2.5 h-auto items-center space-x-[13px]", local.class)}
       {...otherProps}
     >
       <Button

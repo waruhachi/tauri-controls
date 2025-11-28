@@ -5,8 +5,8 @@ import { getOsType } from "./plugin-os"
 export const [appWindow, setAppWindow] = createSignal<Window | null>(null)
 export const [isWindowMaximized, setIsWindowMaximized] = createSignal(false)
 
-import("@tauri-apps/api").then((module) => {
-  setAppWindow(module.window.getCurrent())
+import("@tauri-apps/api/window").then((module) => {
+  setAppWindow(module.getCurrentWindow())
 })
 
 // Update the isWindowMaximized state when the window is resized

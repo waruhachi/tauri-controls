@@ -7,7 +7,7 @@
 [![](https://img.shields.io/bundlephobia/minzip/tauri-controls)](https://bundlephobia.com/)
 [![](https://img.shields.io/npm/dt/tauri-controls)](https://npmjs.com/package/tauri-controls)
 
-[![](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)](https://www.npmjs.com/package/tauri-controls) [![](https://img.shields.io/badge/Svelte-4A4A55?logo=svelte&logoColor=FF3E00)](https://www.npmjs.com/package/@tauri-controls/svelte) [![SolidJS](https://img.shields.io/badge/SolidJS-2c4f7c?logo=solid&logoColor=c8c9cb)](https://www.npmjs.com/package/@tauri-controls/solid) [![Vue.js](https://img.shields.io/badge/Vue.js-%2335495e.svg?logo=vuedotjs&logoColor=%234FC08D)](https://www.npmjs.com/package/@tauri-controls/vue)
+[![](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)](https://www.npmjs.com/package/@waruhachi/tauri-controls-react) [![](https://img.shields.io/badge/Svelte-4A4A55?logo=svelte&logoColor=FF3E00)](https://www.npmjs.com/package/@waruhachi/tauri-controls-svelte) [![SolidJS](https://img.shields.io/badge/SolidJS-2c4f7c?logo=solid&logoColor=c8c9cb)](https://www.npmjs.com/package/@waruhachi/tauri-controls-solid) [![Vue.js](https://img.shields.io/badge/Vue.js-%2335495e.svg?logo=vuedotjs&logoColor=%234FC08D)](https://www.npmjs.com/package/@waruhachi/tauri-controls-vue)
 
 **Tauri Controls** is a library that provides native-looking **window controls** for [Tauri 2](https://beta.tauri.app) applications. You can enhance the user experience of your Tauri 2 applications with window controls that mimic the identical native controls on the current system.
 
@@ -24,16 +24,16 @@ The following designs are taken as reference:
 
 ```bash
 # React:
-bun add tauri-controls
+bun add @waruhachi/tauri-controls-react
 
 # Svelte:
-bun add @tauri-controls/svelte
+bun add @waruhachi/tauri-controls-svelte
 
 # Solid.js:
-bun add @tauri-controls/solid
+bun add @waruhachi/tauri-controls-solid
 
 # Vue.js:
-bun add @tauri-controls/vue
+bun add @waruhachi/tauri-controls-vue
 ```
 
 ```bash
@@ -45,7 +45,7 @@ bun add -D clsx tailwind-merge
 > For **Svelte** projects, include the following line in the `content` section of your `tailwind.config.js`:
 >
 > ```js
-> "./node_modules/@tauri-controls/svelte/**/*.{js,svelte,ts}"
+> "./node_modules/@waruhachi/tauri-controls-svelte/**/*.{js,svelte,ts}"
 > ```
 
 Then, make sure to include the following tauri plugins in your `src-tauri` directory:
@@ -106,10 +106,10 @@ function MyTitlebar() {
 
 ### More examples:
 
-- [in React](https://github.com/agmmnn/tauri-controls/blob/master/apps/tauri-controls/src/App.tsx)
-- [in Svelte](https://github.com/agmmnn/tauri-controls/blob/master/apps/tauri-controls-svelte/src/routes/%2Bpage.svelte)
-- [in Solid.js](https://github.com/agmmnn/tauri-controls/blob/master/apps/tauri-controls-solid/src/App.tsx)
-- [in Vue.js](https://github.com/agmmnn/tauri-controls/blob/master/apps/tauri-controls-vue/src/App.vue)
+- [in React](https://github.com/waruhachi/tauri-controls/blob/master/apps/tauri-controls/src/App.tsx)
+- [in Svelte](https://github.com/waruhachi/tauri-controls/blob/master/apps/tauri-controls-svelte/src/routes/%2Bpage.svelte)
+- [in Solid.js](https://github.com/waruhachi/tauri-controls/blob/master/apps/tauri-controls-solid/src/App.tsx)
+- [in Vue.js](https://github.com/waruhachi/tauri-controls/blob/master/apps/tauri-controls-vue/src/App.vue)
 
 ## Options
 
@@ -164,15 +164,15 @@ Project Structure:
 └── turbo.json                      # TurboRepo configuration
 ```
 
-If you're interested in contributing, check out our [TODO list](https://github.com/agmmnn/tauri-controls/blob/master/TODOs.md) for tasks you can help with. Your contributions are appreciated!
+If you're interested in contributing, check out our [TODO list](https://github.com/waruhachi/tauri-controls/blob/master/TODOs.md) for tasks you can help with. Your contributions are appreciated!
 
 ## Contributors
 
 This project is made possible by the contributions of various individuals. Thank you to all the contributors who have helped make this project better.
 
-- **[tauri-controls](https://www.npmjs.com/package/tauri-controls), [@tauri-controls/svelte](https://www.npmjs.com/package/@tauri-controls/svelte)**: [@agmmnn](https://github.com/agmmnn)
-- **[@tauri-controls/solid](https://www.npmjs.com/package/@tauri-controls/solid)**: [@ronanru](https://github.com/ronanru)
-- **[@tauri-controls/vue](https://www.npmjs.com/package/@tauri-controls/vue)**: [@allenli178](https://github.com/allenli178)
+- **[tauri-controls](https://www.npmjs.com/package/tauri-controls), [@waruhachi/tauri-controls-svelte](https://www.npmjs.com/package/@waruhachi/tauri-controls-svelte)**: [@agmmnn](https://github.com/agmmnn)
+- **[@waruhachi/tauri-controls-solid](https://www.npmjs.com/package/@waruhachi/tauri-controls-solid)**: [@ronanru](https://github.com/ronanru)
+- **[@waruhachi/tauri-controls-vue](https://www.npmjs.com/package/@waruhachi/tauri-controls-vue)**: [@allenli178](https://github.com/allenli178)
 
 ## Further Reading
 

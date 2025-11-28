@@ -16,14 +16,14 @@
 
 - [ ] \[macOS] IsWindowMaximized not work on macOS (react, solid). [#10](https://github.com/agmmnn/tauri-controls/issues/10)
 
-### @tauri-controls/svelte:
+### @waruhachi/tauri-controls-svelte:
 
 - [ ] Maximize icon does not change to "Unmaximize" when the window is maximized.
 
-### @tauri-controls/solid:
+### @waruhachi/tauri-controls-solid:
 
 - [ ] \[macOS] IsWindowMaximized not work on macOS (react, solid). [#10](https://github.com/agmmnn/tauri-controls/issues/10)
 
-### @tauri-controls/vue:
+### @waruhachi/tauri-controls-vue:
 
 - [x] Maximize icon does not change when the window is maximized by double clicking on the titlebar (data-tauri-drag-region).

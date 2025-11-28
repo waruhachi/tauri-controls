@@ -19,7 +19,7 @@
 
 <div
   {...$$props}
-  class={cn("mr-[10px] h-auto items-center space-x-[13px]", $$props.class)}
+  class={cn("mr-2.5 h-auto items-center space-x-[13px]", $$props.class)}
 >
   <Button
     on:click={() => minimizeWindow()}

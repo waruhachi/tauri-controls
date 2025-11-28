@@ -15,10 +15,10 @@ const platforms: platform[] = ["windows", "macos", "gnome"]
     <div class="flex w-[960px] flex-col space-y-3 px-14 py-6">
       <ThemeSwitch />
       <span class="w-fit rounded bg-violet-200/20 px-2 font-mono">
-        @tauri-controls/vue
+        @waruhachi/tauri-controls-vue
       </span>
       <span
-        class="w-fit border-b border-slate-400 pb-1 pr-10 text-lg font-semibold dark:border-slate-600"
+        class="w-fit border-b border-slate-400 pr-10 pb-1 text-lg font-semibold dark:border-slate-600"
       >
         WindowControls
       </span>
@@ -40,7 +40,7 @@ const platforms: platform[] = ["windows", "macos", "gnome"]
         <WindowControls platform="macos" justify />
       </div>
       <span
-        class="w-fit border-b border-slate-400 pb-1 pr-10 text-lg font-semibold dark:border-slate-600"
+        class="w-fit border-b border-slate-400 pr-10 pb-1 text-lg font-semibold dark:border-slate-600"
       >
         WindowTitlebar
       </span>

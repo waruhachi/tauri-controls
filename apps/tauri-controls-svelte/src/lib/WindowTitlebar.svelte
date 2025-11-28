@@ -22,7 +22,7 @@
       ...restProps
     } = windowControlsProps
     return {
-      justify: false,
+      justify: windowControlsJustify ?? false,
       class: cn(windowControlsClass, ml),
       ...restProps
     }
@@ -32,7 +32,7 @@
 <div
   {...$$props}
   class={cn(
-    "bg-background flex select-none flex-row overflow-hidden",
+    "bg-background flex flex-row overflow-hidden select-none",
     $$props.class
   )}
   data-tauri-drag-region

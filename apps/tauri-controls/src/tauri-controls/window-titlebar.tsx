@@ -35,7 +35,7 @@ export function WindowTitlebar({
       ...restProps
     } = windowControlsProps || {}
     return {
-      justify: false,
+      justify: windowControlsJustify ?? false,
       className: cn(windowControlsClassName, ml),
       ...restProps,
     }
@@ -44,7 +44,7 @@ export function WindowTitlebar({
   return (
     <div
       className={cn(
-        "bg-background flex select-none flex-row overflow-hidden",
+        "bg-background flex flex-row overflow-hidden select-none",
         className
       )}
       data-tauri-drag-region

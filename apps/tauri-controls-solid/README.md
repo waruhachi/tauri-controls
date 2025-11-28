@@ -7,10 +7,10 @@
 ![](https://img.shields.io/bundlephobia/minzip/%40tauri-controls%2Fsolid)
 [![](https://img.shields.io/npm/dt/%40tauri-controls%2Fsolid)](https://npmjs.com/package/tauri-controls) ![SolidJS](https://img.shields.io/badge/SolidJS-2c4f7c?logo=solid&logoColor=c8c9cb)
 
-## @tauri-controls/solid
+## @waruhachi/tauri-controls-solid
 
 ```bash
-pnpm add @tauri-controls/solid
+pnpm add @waruhachi/tauri-controls-solid
 ```
 
-https://github.com/agmmnn/tauri-controls
+https://github.com/waruhachi/tauri-controls

@@ -3,8 +3,8 @@
   import { WindowControls, WindowTitlebar } from "$lib"
   import ThemeSwitch from "./theme-switch.svelte"
 
-  const platforms = ["windows", "macos", "gnome"]
-  const menuItems = ["File", "Edit", "View", "Account", "Theme"]
+  const platforms = ["windows", "macos", "gnome"] as const
+  const menuItems = ["File", "Edit", "View", "Account", "Theme"] as const
 </script>
 
 <svelte:head>
@@ -17,10 +17,10 @@
   <div class="flex w-[960px] flex-col space-y-3 px-14 py-6">
     <ThemeSwitch />
     <span class="w-fit rounded bg-orange-200/20 px-2 font-mono"
-      >@tauri-controls/svelte</span
+      >@waruhachi/tauri-controls-svelte</span
     >
     <span
-      class="w-fit border-b border-slate-400 pb-1 pr-10 dark:border-slate-600 text-lg font-semibold"
+      class="w-fit border-b border-slate-400 pr-10 pb-1 text-lg font-semibold dark:border-slate-600"
     >
       WindowControls
     </span>
@@ -28,7 +28,7 @@
     <div
       class="flex w-fit space-x-3 rounded-xl border border-dashed border-slate-400 p-3 shadow dark:border-slate-600"
     >
-      {#each platforms as platform}
+      {#each platforms as platform (platform)}
         <WindowControls {platform} />
       {/each}
     </div>
@@ -43,7 +43,7 @@
     </div>
 
     <span
-      class="w-fit border-b border-slate-400 pb-1 pr-10 dark:border-slate-600 text-lg font-semibold"
+      class="w-fit border-b border-slate-400 pr-10 pb-1 text-lg font-semibold dark:border-slate-600"
     >
       WindowTitlebar
     </span>
@@ -51,7 +51,7 @@
     <WindowTitlebar>content</WindowTitlebar>
 
     <!-- Icon+Title+Controls  -->
-    {#each platforms as platform}
+    {#each platforms as platform (platform)}
       <WindowTitlebar
         controlsOrder="platform"
         class="h-10 rounded-t-lg border border-dashed border-slate-400  bg-white shadow dark:border-slate-600 dark:bg-slate-800"
@@ -83,7 +83,7 @@
     {/each}
 
     <!--  Icon+Menu+Title+Controls  -->
-    {#each platforms as platform}
+    {#each platforms as platform (platform)}
       <WindowTitlebar
         controlsOrder="platform"
         class="h-10 rounded-t-lg  bg-white shadow dark:bg-slate-800"
@@ -110,7 +110,7 @@
             <path d="M10 2v16" />
           </svg>
           <div
-            class="flex flex-row space-x-2 whitespace-nowrap rounded-md px-2 py-1 shadow"
+            class="flex flex-row space-x-2 rounded-md px-2 py-1 whitespace-nowrap shadow"
           >
             {#each menuItems as x (x)}
               <span>{x}</span>

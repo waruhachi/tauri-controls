@@ -35,8 +35,8 @@ export const TauriAppWindowProvider: React.FC<TauriAppWindowProviderProps> = ({
   // https://github.com/tauri-apps/plugins-workspace/issues/217
   useEffect(() => {
     if (typeof window !== "undefined") {
-      import("@tauri-apps/api").then((module) => {
-        setAppWindow(module.window.getCurrent())
+      import("@tauri-apps/api/window").then((module) => {
+        setAppWindow(module.getCurrentWindow())
       })
     }
   }, [])

@@ -6,12 +6,8 @@ import type { WindowControlsProps, WindowTitlebarProps } from "./types"
 import { getOsType } from "./utils/os"
 import WindowControls from "./WindowControls.vue"
 
-const { controlsOrder, windowControlsProps } = withDefaults(
-  defineProps<WindowTitlebarProps>(),
-  {
-    controlsOrder: "system",
-  }
-)
+const { controlsOrder = "system", windowControlsProps } =
+  defineProps<WindowTitlebarProps>()
 
 const osType = ref<OsType | undefined>(undefined)
 
@@ -46,7 +42,7 @@ const customProps = (ml: string) => {
   <div
     :class="
       twMerge(
-        'bg-background flex select-none flex-row overflow-hidden',
+        'bg-background flex flex-row overflow-hidden select-none',
         $attrs.class as string
       )
     "

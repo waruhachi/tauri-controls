@@ -3,14 +3,14 @@
   <img alt="Tauri Controls" src="https://github.com/agmmnn/tauri-controls/assets/16024979/12f46aa7-72de-4c44-aa4a-0580c73fc73a">
 </picture>
 
-![](https://img.shields.io/bundlephobia/min/@tauri-controls/svelte)
-![](https://img.shields.io/bundlephobia/minzip/@tauri-controls/svelte)
-![](https://img.shields.io/npm/dt/@tauri-controls/svelte)
+![](https://img.shields.io/bundlephobia/min/@waruhachi/tauri-controls-svelte)
+![](https://img.shields.io/bundlephobia/minzip/@waruhachi/tauri-controls-svelte)
+![](https://img.shields.io/npm/dt/@waruhachi/tauri-controls-svelte)
 
-## @tauri-controls/svelte
+## @waruhachi/tauri-controls-svelte
 
 ```bash
-pnpm add @tauri-controls/svelte
+pnpm add @waruhachi/tauri-controls-svelte
 ```
 
-https://github.com/agmmnn/tauri-controls
+https://github.com/waruhachi/tauri-controls

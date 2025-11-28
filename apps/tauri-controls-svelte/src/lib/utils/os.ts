@@ -4,6 +4,6 @@ export let osType: OsType
 
 if (typeof window !== "undefined") {
   import("@tauri-apps/plugin-os").then((module) => {
-    module.type().then((x) => (osType = x))
+    osType = module.type()
   })
 }
