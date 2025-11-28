@@ -34,8 +34,8 @@ bun add @waruhachi/tauri-controls-vue
 
 ```bash
 # Install peer dependencies:
-bun add @tauri-apps/plugin-os @tauri-apps/api
-bun add -D clsx tailwind-merge
+bun tauri add os
+bun add --dev clsx tailwind-merge
 ```
 
 > For **Svelte** projects, include the following line in the `content` section of your `tailwind.config.js`:
@@ -44,19 +44,12 @@ bun add -D clsx tailwind-merge
 > "./node_modules/@waruhachi/tauri-controls-svelte/**/*.{js,svelte,ts}"
 > ```
 
-Then, make sure to include the following tauri plugins in your `src-tauri` directory:
-
-```bash
-cargo add tauri-plugin-window tauri-plugin-os
-```
-
 Don't forget to register plugins in your main function.
 
 ```rust
 fn main() {
     tauri::Builder::default()
         .plugin(tauri_plugin_os::init())
-        .plugin(tauri_plugin_window::init())
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }
