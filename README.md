@@ -102,7 +102,7 @@ function MyTitlebar() {
 
 ### More examples:
 
-- [in React](https://github.com/waruhachi/tauri-controls/blob/master/apps/tauri-controls/src/App.tsx)
+- [in React](https://github.com/waruhachi/tauri-controls/blob/master/apps/tauri-controls-react/src/App.tsx)
 - [in Svelte](https://github.com/waruhachi/tauri-controls/blob/master/apps/tauri-controls-svelte/src/routes/%2Bpage.svelte)
 - [in Solid.js](https://github.com/waruhachi/tauri-controls/blob/master/apps/tauri-controls-solid/src/App.tsx)
 - [in Vue.js](https://github.com/waruhachi/tauri-controls/blob/master/apps/tauri-controls-vue/src/App.vue)
