@@ -1,5 +1,11 @@
 # tauri-controls
 
+## 0.6.0
+
+### Minor Changes
+
+- fix: make sure CSS files are bundled properly
+
 ## 0.5.0
 
 ### Minor Changes
